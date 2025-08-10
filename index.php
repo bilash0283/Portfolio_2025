@@ -39,6 +39,7 @@ if (isset($_GET['download'])) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="images/profile-img.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body class="overflow-x-hidden font-Outfit leading-8 dark:bg-darkTheme dark:text-white">
@@ -177,35 +178,34 @@ if (isset($_GET['download'])) {
                     </li>
                 </ul>
 
-                <h4 class="my-6 text-grey-700 font-Ovo dark:text-white/80">Tools i used</h4>
+                <h4 class="my-6 text-grey-700 font-Ovo dark:text-white/80">Best Skill On</h4>
 
-                <ul class="flex items-center gap-3 sm:gap-5 ">
-                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border
-                     border-gray-400 rounded-lg cursor-pointer
-                     hover:-translate-y-1 duration-500">
-                        <img src="images/vscode.png" class="w-5 sm:w-7" alt="">
+                <ul class="flex gap-4 items-center">
+                    <li class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-orange-500">
+                        <i class="fa-brands fa-html5 fa-2x"></i>
                     </li>
-
-                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border
-                    border-gray-400 rounded-lg cursor-pointer
-                    hover:-translate-y-1 duration-500">
-                        <img src="images/firebase.png" class="w-5 sm:w-7" alt="">
+                    <li class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-blue-500">
+                        <i class="fa-brands fa-css3-alt fa-2x"></i>
                     </li>
-
-                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border
-                   border-gray-400 rounded-lg cursor-pointer
-                   hover:-translate-y-1 duration-500">
-                        <img src="images/mongodb.png" class="w-5 sm:w-7" alt="">
+                    <li class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-yellow-500">
+                        <i class="fa-brands fa-js fa-2x"></i>
                     </li>
-                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border
-                  border-gray-400 rounded-lg cursor-pointer
-                  hover:-translate-y-1 duration-500">
-                        <img src="images/figma.png" class="w-5 sm:w-7" alt="">
+                    <li class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-purple-500">
+                        <i class="fa-brands fa-bootstrap fa-2x"></i>
                     </li>
-                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border
-                 border-gray-400 rounded-lg cursor-pointer
-                 hover:-translate-y-1 duration-500">
-                        <img src="images/git.png" class="w-5 sm:w-7" alt="">
+                    <li class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-cyan-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="currentColor" class="w-8 h-8">
+                            <path d="M24.001 9.38c-6.399 0-10.4 3.2-12 9.6 2.4-3.2 5.2-4.4 8.4-3.6 1.824.456 3.126 1.784 4.563 3.251 2.347 2.386 5.074 5.154 10.837 5.154 6.399 0 10.4-3.2 12-9.6-2.4 3.2-5.2 4.4-8.4 3.6-1.824-.456-3.126-1.784-4.563-3.251-2.347-2.386-5.074-5.154-10.837-5.154Zm-12 12c-6.399 0-10.4 3.2-12 9.6 2.4-3.2 5.2-4.4 8.4-3.6 1.824.456 3.126 1.784 4.563 3.251 2.347 2.386 5.074 5.154 10.837 5.154 6.399 0 10.4-3.2 12-9.6-2.4 3.2-5.2 4.4-8.4 3.6-1.824-.456-3.126-1.784-4.563-3.251-2.347-2.386-5.074-5.154-10.837-5.154Z"/>
+                        </svg>
+                    </li>
+                    <li class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-indigo-500">
+                        <i class="fa-brands fa-php fa-2x"></i>
+                    </li>
+                    <li class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-red-500">
+                        <i class="fa-brands fa-laravel fa-2x"></i>
+                    </li>
+                    <li class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-blue-700">
+                        <i class="fa-brands fa-wordpress fa-2x"></i>
                     </li>
                 </ul>
             </div>
@@ -229,7 +229,7 @@ if (isset($_GET['download'])) {
         hover:shadow-[4px_4px_0_#000] cursor-pointer hover: bg-lightHover 
         hover: -translate-y-1 duration-500 dark:bg-darkHover dark:hover:bg-darkHover dark:hover:shadow-white">
                 <img src="images/web-icon.png" class="w-10" alt="">
-                <h3 class="text-lg my-4 text-gray-700 dark:text-white">Web Design</h3>
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">Web Development</h3>
                 <p class="text-sm text-gray-600 leading-5 dark:text-white/80">Web Development is the process of
                     building,
                     maintaining, and optimizing websites...</p>
