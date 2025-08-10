@@ -370,7 +370,7 @@ if (isset($_GET['download'])) {
         <h4 class="text-center mb-2 text-lg">Contact with me </h4>
         <h2 class="text-center text-5xl font-semibold">Get In Touch</h2>
         <p class="text-center max-w-2xl mx-auto mt-5 mb-12">I had love to hear from you!
-            If you have any qquestion, Commenrs or feedback, Please use the form below
+            If you have any question, Commenrs or feedback, Please use the form below
         </p>
         <form action="" class="max-w-2xl mx-auto" method="POST">
             <div class=" grid grid-cols-auto  gap-6 mt-10 mb-8">
@@ -382,12 +382,15 @@ if (isset($_GET['download'])) {
              border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90">
             </div>
             <textarea placeholder="Enter your message" name="message" rows="6" class="w-full p-4 outline-none
-        border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90"></textarea>
+                 border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90">
+            </textarea>
+
             <button type="submit" name="btn" class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black\80
-         text-white rounded-full mx-auto hover: bg-black duration-500 dark:bg-transparent
-         dark:border-[0.5px] dark:bg-darkHover
-        ">Submit now
-                <img src="images/right-arrow.png " class="w-4" alt=""></button>
+                text-white rounded-full mx-auto hover: bg-black duration-500 dark:bg-transparent
+                dark:border-[0.5px] dark:bg-darkHover
+                ">Submit now
+                        <img src="images/right-arrow.png " class="w-4" alt="">
+            </button>
         </form>
 
 
@@ -421,13 +424,12 @@ Contacts International";
                     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
                     if (mail($to, $subject, $message, $headers)) {
-                        
+                        echo "mail Send Successfull";
                     } else {
                         echo "❌ Mail Send Failed";
                     }
 
-                        header("Location: " . $_SERVER['PHP_SELF'] . "?success=1");
-                        exit();
+                    
                 }
 
             }
@@ -445,17 +447,39 @@ Contacts International";
             <div class="w-max flex items-center gap-2 mx-auto">
                 <img src="images/mail_icon.png" class="w-6 dark:hidden" alt="">
                 <img src="images/mail_icon_dark.png" class="w-6 hidden dark:block" alt="">
-                hafsakanwal895@gmail.com
+                bilash0283@gmail.com
             </div>
         </div>
         <div class="text-center sm:flex items-center justify-between border-t
      border-grey-400 mx-[10%] mt-12 py-6">
-            <p>&copy;2024 Hafsa Kanwal.All right reserved</p>
-            <ul class="flex items-center gap-10 justify-canter mt-4 sm:mt-0">
+            <p>&copy; <?php echo date('Y') ?> Bilash Kumar.All right reserved</p>
 
-                <li><a href="https://instagram.com/hafsakanwal">Github</a></li>
-                <li><a href="https://instagram.com/hafsakanwal">LinkedIn</a></li>
-                <li><a href="https://instagram.com/hafsakanwal">Twitter</a></li>
+            <ul class="flex items-center gap-10 justify-canter mt-4 sm:mt-0">
+                 <li>
+                    <a href="https://www.facebook.com/bilash0283" target="_blank" class="text-blue-600 hover:text-blue-800 text-2xl" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/bilash0283/" target="_blank" class="text-pink-500 hover:text-pink-700 text-2xl" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@bilash0283" target="_blank" class="text-red-600 hover:text-red-800 text-2xl" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/bilash0283" target="_blank" class="text-gray-800 hover:text-black text-2xl" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/bilash0283/" target="_blank" class="text-blue-700 hover:text-blue-900 text-2xl" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
