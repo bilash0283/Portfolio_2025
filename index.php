@@ -1,4 +1,5 @@
 <?php
+session_start();
 function forceDownload($filePath)
 {
     if (file_exists($filePath)) {
@@ -35,9 +36,6 @@ if (isset($_GET['download'])) {
     <title>Portfolio _ BILASH KUMAR</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.config.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="images/profile-img.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
@@ -385,6 +383,27 @@ if (isset($_GET['download'])) {
                  border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90">
             </textarea>
 
+            <?php if(isset($_SESSION['success']) && $_SESSION['success'] == 1): ?>
+                <div class="flex items-center bg-green-100 border border-green-400 text-green-700 px-4 py-3 mb-4 rounded relative" role="alert">
+                    <svg class="fill-current w-6 h-6 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M10 15a1 1 0 0 1-.7-.3l-4-4a1 1 0 1 1 1.4-1.4L10 12.58l5.3-5.3a1 1 0 0 1 1.4 1.42l-6 6A1 1 0 0 1 10 15z"/>
+                    </svg>
+                    <span class="block sm:inline">Mail sent successfully. Check your Inbox.</span>
+                </div>
+                <?php 
+                
+                unset($_SESSION['success']);
+                elseif(isset($_SESSION['success']) && $_SESSION['success'] == 2): ?>
+                <div class="flex items-center bg-yellow-100 border mb-4 border-yellow-400 text-yellow-700 px-4 py-3 rounded relative" role="alert">
+                    <svg class="fill-current w-6 h-6 mr-2 text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M8.257 3.099c.765-1.36 2.722-1.36 3.487 0l6.518 11.59c.75 1.335-.213 2.99-1.742 2.99H3.48c-1.53 0-2.492-1.655-1.743-2.99L8.257 3.1zM11 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-.25-5.75h-1.5v4.5h1.5v-4.5z"/>
+                    </svg>
+                    <span class="block sm:inline">Warning! Mail Send Failed!.</span>
+                </div>
+                <?php 
+                unset($_SESSION['success']);
+            endif; ?>
+
             <button type="submit" name="btn" class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black\80
                 text-white rounded-full mx-auto hover: bg-black duration-500 dark:bg-transparent
                 dark:border-[0.5px] dark:bg-darkHover
@@ -395,51 +414,50 @@ if (isset($_GET['download'])) {
 
 
         <?php 
-        
             if(isset($_POST['btn'])){
-                $name = $_POST['name'];
-                $email = $_POST['email'];
+                $name = $_POST['name'] ?? '';
+                $email = $_POST['email'] ?? '';
 
                 if(!empty($email)){
                     $to = $email;
                     $subject = "Thank You for Reaching Out";
                     $message = "
-Dear $name,
+            Dear $name,
 
-My name is Bilash Kumar Mondol.
-Thank you for contacting me via email.
-Welcome to my portfolio!
+            My name is Bilash Kumar Mondol.
+            Thank you for contacting me via email.
+            Welcome to my portfolio!
 
-If you would like to know more, please feel free to reach out to me via WhatsApp or email:
-WhatsApp: +880 1705 372439
-Email: bilash0283@gmail.com
+            If you would like to know more, please feel free to reach out to me via WhatsApp or email:
+            WhatsApp: +880 1705 372439
+            Email: bilash0283@gmail.com
 
-Best regards,
-Bilash Kumar Mondol
-Web Developer
-Contacts International";
+            Best regards,
+            Bilash Kumar Mondol
+            Web Developer
+            Contacts International";
 
                     $headers = "From: bilash.kumar@ci-gsc.com\r\n";
                     $headers .= "Reply-To: bilash.kumar@ci-gsc.com\r\n";
                     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
                     if (mail($to, $subject, $message, $headers)) {
-                        echo "mail Send Successfull";
+                        $_SESSION['success'] = 1;  
                     } else {
-                        echo "❌ Mail Send Failed";
+                        $_SESSION['success'] = 2;  
                     }
-
-                    
+                } else {
+                    $_SESSION['success'] = 2;
                 }
 
-            }
-        
+                header("Location: " . $_SERVER['PHP_SELF']);
+        }
+                
         ?>
 
     </div>
 
     <!-- --------------------------Footer------------------- -->
-
     <div class="mt-20">
         <div class="text-center">
             <img src="images/hafsa-removebg-preview (1).png" class="w-36 h-10 mx-auto mb-2 dark:hidden" alt="">
@@ -495,24 +513,20 @@ Contacts International";
 
         function typeLoop() {
             if (!isDeleting) {
-                // লিখছো
                 target.innerHTML = text.substring(0, index) + handIconHtml;
                 index++;
 
                 if (index > text.length) {
-                    // পুরো লেখা হয়ে গেছে, একটু থামো, তারপর ডিলিট শুরু করো
                     isDeleting = true;
-                    setTimeout(typeLoop, 1500); // 1.5 সেকেন্ড থামো পুরো লেখা দেখানোর জন্য
+                    setTimeout(typeLoop, 1500); 
                     return;
                 }
                 setTimeout(typeLoop, 150);
             } else {
-                // ডিলিট করছো
                 index--;
                 target.innerHTML = text.substring(0, index) + handIconHtml;
 
                 if (index === 0) {
-                    // ডিলিট শেষ, আবার টাইপ শুরু করো
                     isDeleting = false;
                     setTimeout(typeLoop, 500);
                     return;
@@ -523,7 +537,6 @@ Contacts International";
 
         typeLoop();
     </script>
-
 </body>
 
 </html>
