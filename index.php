@@ -98,7 +98,6 @@ if (isset($_GET['download'])) {
     </nav>
 
     <!------------------------------- Hero-Section------------------------------------->
-
     <div class="w-11/12  max-w-3xl  text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 ">
         <img src="images/BILASH.png" class="rounded-full w-32" alt="">
         <!-- <h3 class="flex item-center gap-2 text-xl  md:text-2xl mb-3 font-Ovo">Hi! I'm Bilash Kumar Mondol <img
@@ -124,7 +123,7 @@ if (isset($_GET['download'])) {
     </div>
 
     <!-- About me -->
-    <div id="about" class="w-full px-[12%] py-10 pt-[230px] md:pt-0 scroll-mt-20">
+    <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
         <h4 class="text-center mb-2 text-lg font-Ovo">Introduction</h4>
         <h2 class="text-center text-5xl font-semibold font-Ovo ">About me</h2>
 
@@ -188,21 +187,6 @@ if (isset($_GET['download'])) {
                     <li
                         class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-blue-500">
                         <i class="fa-brands fa-css3-alt fa-2x"></i>
-                    </li>
-                    <li
-                        class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-yellow-500">
-                        <i class="fa-brands fa-js fa-2x"></i>
-                    </li>
-                    <li
-                        class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-purple-500">
-                        <i class="fa-brands fa-bootstrap fa-2x"></i>
-                    </li>
-                    <li
-                        class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-cyan-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="currentColor" class="w-8 h-8">
-                            <path
-                                d="M24.001 9.38c-6.399 0-10.4 3.2-12 9.6 2.4-3.2 5.2-4.4 8.4-3.6 1.824.456 3.126 1.784 4.563 3.251 2.347 2.386 5.074 5.154 10.837 5.154 6.399 0 10.4-3.2 12-9.6-2.4 3.2-5.2 4.4-8.4 3.6-1.824-.456-3.126-1.784-4.563-3.251-2.347-2.386-5.074-5.154-10.837-5.154Zm-12 12c-6.399 0-10.4 3.2-12 9.6 2.4-3.2 5.2-4.4 8.4-3.6 1.824.456 3.126 1.784 4.563 3.251 2.347 2.386 5.074 5.154 10.837 5.154 6.399 0 10.4-3.2 12-9.6-2.4 3.2-5.2 4.4-8.4 3.6-1.824-.456-3.126-1.784-4.563-3.251-2.347-2.386-5.074-5.154-10.837-5.154Z" />
-                        </svg>
                     </li>
                     <li
                         class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-indigo-500">
@@ -370,7 +354,7 @@ if (isset($_GET['download'])) {
 
         </div>
         <a class="w-max flex items-center justify-center gap-2 text-gray-700
-    border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto
+        border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto
      my-20 hover:bg-[#fcf4ff] duration-500 
      dark:text-white dark:border-white dark:hover-[#2a004a] " href="#">
             Show More
@@ -403,6 +387,14 @@ if (isset($_GET['download'])) {
         ">Submit now
                 <img src="images/right-arrow.png " class="w-4" alt=""></button>
         </form>
+
+
+        <?php 
+        
+        
+        
+        ?>
+
     </div>
 
     <!-- --------------------------Footer------------------- -->
