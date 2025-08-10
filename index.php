@@ -72,20 +72,23 @@
 
     <div class="w-11/12 pt-[230px] md:pt-0 max-w-3xl  text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 ">
         <img src="images/BILASH.png" class="rounded-full w-32" alt="">
-        <h3 class="flex item-center gap-2 text-xl  md:text-2xl mb-3 font-Ovo">Hi! I'm Hafsa Kanwal <img
+        <h3 class="flex item-center gap-2 text-xl  md:text-2xl mb-3 font-Ovo">Hi! I'm Bilash Kumar Mondol<img
                 src="images/hand-icon.png" class="w-6" alt=""></h3>
-        <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-semibold font-Ovo ">Frontend Web Developer based in
-            Islamabad
+        <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-semibold font-Ovo ">Web Developer based in
+            Dhaka , Bangladesh
         </h1>
 
         <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
-            <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20]
+            <a href="#Contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20]
             text-wrap flex items-center gap-2 text-white dark:border-transparent ">Contact Me
                 <img src="images/right-arrow-white.png" class="w-5" alt=""></a>
 
-            <a href="images/cv/BILASH_CV.pdf" download class="px-10 py-3 border border-gray-500 rounded-full bg-white
-            flex items-center gap-2 dark:text-black ">My Resume
-                <img src="images/download-icon.png" class="w-5" alt=""></a>
+            <a href="images/cv/BILASH_CV.pdf" download="images/cv/BILASH_CV.pdf" 
+            class="px-10 py-3 border border-gray-500 rounded-full bg-white flex items-center gap-2 dark:text-black">
+                My Resume
+                <img src="images/download-icon.png" class="w-5" alt="Download Icon">
+            </a>
+
         </div>
     </div>
 
