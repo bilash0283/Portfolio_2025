@@ -372,16 +372,16 @@ if (isset($_GET['download'])) {
         <p class="text-center max-w-2xl mx-auto mt-5 mb-12">I had love to hear from you!
             If you have any qquestion, Commenrs or feedback, Please use the form below
         </p>
-        <form action="" class="max-w-2xl mx-auto">
+        <form action="" class="max-w-2xl mx-auto" method="POST">
             <div class=" grid grid-cols-auto  gap-6 mt-10 mb-8">
-                <input type="text" placeholder="Enter Your Name" class="flex-1 p-3 outline-none
+                <input type="text" name="name" placeholder="Enter Your Name" class="flex-1 p-3 outline-none
              border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90">
-                <input type="email" placeholder="Enter Your Email" class="flex-1 p-3 outline-none
+                <input type="email" name="email" placeholder="Enter Your Email" class="flex-1 p-3 outline-none
              border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90">
             </div>
-            <textarea placeholder="Enter your message" rows="6" class="w-full p-4 outline-none
+            <textarea placeholder="Enter your message" name="message" rows="6" class="w-full p-4 outline-none
         border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90"></textarea>
-            <button class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black\80
+            <button type="submit" name="btn" class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black\80
          text-white rounded-full mx-auto hover: bg-black duration-500 dark:bg-transparent
          dark:border-[0.5px] dark:bg-darkHover
         ">Submit now
@@ -391,7 +391,9 @@ if (isset($_GET['download'])) {
 
         <?php 
         
-        
+            if(isset($_POST['btn'])){
+                $name = $_POST['name'];
+            }
         
         ?>
 
