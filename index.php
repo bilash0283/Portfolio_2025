@@ -150,7 +150,7 @@ if (isset($_GET['download'])) {
                         <img src="images/code-icon-dark.png" class="w-7 mt-3 hidden dark:block" alt="">
 
                         <h3 class="my-4 font-semibold text-gray-700 dark:text-white">languages</h3>
-                        <p class="text-gray-600 text-sm dark:text-white/80">HtML,CSS,Javascript,php,Laravel</p>
+                        <p class="text-gray-600 text-sm dark:text-white/80">PHP , Laravel</p>
                     </li>
 
                     <li class="border-[0.5px] border-grey-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1
@@ -160,7 +160,7 @@ if (isset($_GET['download'])) {
                         <img src="images/edu-icon-dark.png" class="w-7 mt-3 hidden dark:block" alt="">
 
                         <h3 class="my-4 font-semibold text-gray-700 dark:text-white ">Education</h3>
-                        <p class="text-gray-600 text-sm dark:text-white/80">BS-Software Engineering</p>
+                        <p class="text-gray-600 text-sm dark:text-white/80">Diploma in Engineering (CSE)</p>
                     </li>
 
                     <li class="border-[0.5px] border-grey-400 rounded-xl p-6 cursor-pointer hover:bg-[lightHover hover:-translate-y-1
