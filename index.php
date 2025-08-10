@@ -181,30 +181,39 @@ if (isset($_GET['download'])) {
                 <h4 class="my-6 text-grey-700 font-Ovo dark:text-white/80">Best Skill On</h4>
 
                 <ul class="flex gap-4 items-center">
-                    <li class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-orange-500">
+                    <li
+                        class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-orange-500">
                         <i class="fa-brands fa-html5 fa-2x"></i>
                     </li>
-                    <li class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-blue-500">
+                    <li
+                        class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-blue-500">
                         <i class="fa-brands fa-css3-alt fa-2x"></i>
                     </li>
-                    <li class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-yellow-500">
+                    <li
+                        class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-yellow-500">
                         <i class="fa-brands fa-js fa-2x"></i>
                     </li>
-                    <li class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-purple-500">
+                    <li
+                        class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-purple-500">
                         <i class="fa-brands fa-bootstrap fa-2x"></i>
                     </li>
-                    <li class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-cyan-500">
+                    <li
+                        class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-cyan-500">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="currentColor" class="w-8 h-8">
-                            <path d="M24.001 9.38c-6.399 0-10.4 3.2-12 9.6 2.4-3.2 5.2-4.4 8.4-3.6 1.824.456 3.126 1.784 4.563 3.251 2.347 2.386 5.074 5.154 10.837 5.154 6.399 0 10.4-3.2 12-9.6-2.4 3.2-5.2 4.4-8.4 3.6-1.824-.456-3.126-1.784-4.563-3.251-2.347-2.386-5.074-5.154-10.837-5.154Zm-12 12c-6.399 0-10.4 3.2-12 9.6 2.4-3.2 5.2-4.4 8.4-3.6 1.824.456 3.126 1.784 4.563 3.251 2.347 2.386 5.074 5.154 10.837 5.154 6.399 0 10.4-3.2 12-9.6-2.4 3.2-5.2 4.4-8.4 3.6-1.824-.456-3.126-1.784-4.563-3.251-2.347-2.386-5.074-5.154-10.837-5.154Z"/>
+                            <path
+                                d="M24.001 9.38c-6.399 0-10.4 3.2-12 9.6 2.4-3.2 5.2-4.4 8.4-3.6 1.824.456 3.126 1.784 4.563 3.251 2.347 2.386 5.074 5.154 10.837 5.154 6.399 0 10.4-3.2 12-9.6-2.4 3.2-5.2 4.4-8.4 3.6-1.824-.456-3.126-1.784-4.563-3.251-2.347-2.386-5.074-5.154-10.837-5.154Zm-12 12c-6.399 0-10.4 3.2-12 9.6 2.4-3.2 5.2-4.4 8.4-3.6 1.824.456 3.126 1.784 4.563 3.251 2.347 2.386 5.074 5.154 10.837 5.154 6.399 0 10.4-3.2 12-9.6-2.4 3.2-5.2 4.4-8.4 3.6-1.824-.456-3.126-1.784-4.563-3.251-2.347-2.386-5.074-5.154-10.837-5.154Z" />
                         </svg>
                     </li>
-                    <li class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-indigo-500">
+                    <li
+                        class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-indigo-500">
                         <i class="fa-brands fa-php fa-2x"></i>
                     </li>
-                    <li class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-red-500">
+                    <li
+                        class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-red-500">
                         <i class="fa-brands fa-laravel fa-2x"></i>
                     </li>
-                    <li class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-blue-700">
+                    <li
+                        class="flex items-center justify-center w-14 h-14 border border-gray-300 rounded-lg hover:-translate-y-1 duration-500 text-blue-700">
                         <i class="fa-brands fa-wordpress fa-2x"></i>
                     </li>
                 </ul>
@@ -281,24 +290,22 @@ if (isset($_GET['download'])) {
         <h4 class="text-center mb-2 text-lg font-Ovo">My Portfolio</h4>
         <h2 class="text-center text-5xl font-semibold font-Ovo">My Latest Work</h2>
         <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">Welcome to my web development Portfolio!
-            Explore the collecton of projects showcasing my expertise in front-end-development.
+            Explore the collecton of projects showcasing my expertise in Web development.
         </p>
         <div class="grid grid-cols-auto sm:grid-cols-2 lg:grid-cols-4
           y-10 gap-5 dark:text-black">
             <div class="aspect-square bg-[url('./images/work-1.png')] bg-no-repeat
          bg-cover bg-center rounded-lg relative cursor-pointer group ">
-                <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 
-        -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500
-        group-hover:bottom-7">
+                <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
 
                     <div>
-                        <h2 class="font-semibold ">Frontend Projects</h2>
+                        <h2 class="font-semibold">Frontend Projects</h2>
                         <p class="text-sm text-gray-700">web design</p>
                     </div>
-                    <div class="border rounded-full border-black w-9 aspect-square flex items-center
-        justify-center shadow-[2px_0_#000] group:hover:bg-lime-300 transition">
+                    <a href="https://example.com" target="_blank" 
+                    class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_0_#000] group:hover:bg-lime-300 transition">
                         <img src="images/send-icon.png" class="w-5" alt="">
-                    </div>
+                    </a>
 
                 </div>
             </div>
