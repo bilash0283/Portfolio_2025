@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 
@@ -83,10 +84,10 @@
             text-wrap flex items-center gap-2 text-white dark:border-transparent ">Contact Me
                 <img src="images/right-arrow-white.png" class="w-5" alt=""></a>
 
-            <a href="images/cv/BILASH_CV.pdf" download="images/cv/BILASH_CV.pdf" 
-            class="px-10 py-3 border border-gray-500 rounded-full bg-white flex items-center gap-2 dark:text-black">
-                My Resume
-                <img src="images/download-icon.png" class="w-5" alt="Download Icon">
+            <a href="download.php" 
+                class="px-10 py-3 border border-gray-500 rounded-full bg-white flex items-center gap-2 dark:text-black">
+                    My Resume
+                    <img src="images/download-icon.png" class="w-5" alt="Download Icon">
             </a>
 
         </div>
