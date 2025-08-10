@@ -378,6 +378,8 @@ if (isset($_GET['download'])) {
              border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90">
                 <input type="email" name="email" placeholder="Enter Your Email" class="flex-1 p-3 outline-none
              border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90">
+              <input type="text" name="subject" placeholder="Enter Your Subject" class="flex-1 p-3 outline-none
+             border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90">
             </div>
             <textarea placeholder="Enter your message" name="message" rows="6" class="w-full p-4 outline-none
         border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90"></textarea>
@@ -393,6 +395,41 @@ if (isset($_GET['download'])) {
         
             if(isset($_POST['btn'])){
                 $name = $_POST['name'];
+                $email = $_POST['email'];
+
+                if(!empty($email)){
+                    $to = $email;
+                    $subject = "Thank You for Reaching Out";
+                    $message = "
+Dear $name,
+
+My name is Bilash Kumar Mondol.
+Thank you for contacting me via email.
+Welcome to my portfolio!
+
+If you would like to know more, please feel free to reach out to me via WhatsApp or email:
+WhatsApp: +880 1705 372439
+Email: bilash0283@gmail.com
+
+Best regards,
+Bilash Kumar Mondol
+Web Developer
+Contacts International";
+
+                    $headers = "From: bilash.kumar@ci-gsc.com\r\n";
+                    $headers .= "Reply-To: bilash.kumar@ci-gsc.com\r\n";
+                    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+
+                    if (mail($to, $subject, $message, $headers)) {
+                        
+                    } else {
+                        echo "❌ Mail Send Failed";
+                    }
+
+                        header("Location: " . $_SERVER['PHP_SELF'] . "?success=1");
+                        exit();
+                }
+
             }
         
         ?>
