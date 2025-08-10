@@ -28,6 +28,7 @@ if (isset($_GET['download'])) {
 ?>
 
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -130,17 +131,19 @@ if (isset($_GET['download'])) {
             <div class="max-w-max mx-auto relative">
                 <img src="images/user-image.png" class="w-64 sm:w-80 roundede-3xl max-w-none " alt="">
 
-                <div class="bg-white w-1/2 aspect-square absolute right-0 bottom-0
-         rounded-full translate-x-1/4 translate-y-1/3 
-         shadow[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center">
-                    <img src="images/circular-text.png" class="w-full animate-spin-spin_slow ">
-                    <img src="images/dev-icon.png" class="w-1/4 absolute top-1/2 left-1/2 
-         -translate-x-1/2 -translate-y-1/2" alt="">
-
+                <div class="w-1/2 aspect-square absolute right-0 bottom-0
+                    rounded-full translate-x-1/4 translate-y-1/3
+                    shadow-[0_4px_55px_rgba(149,0,162,0.15)]
+                    flex items-center justify-center
+                    bg-white dark:bg-black">
+                    <img src="images/devloper_icon.png" class="w-3/4 border-spacing-2 border-amber-500 absolute top-1/2 left-1/2 
+                    -translate-x-1/2 -translate-y-1/2" alt="">
                 </div>
             </div>
             <div class="flex-1">
-                <p class="mb-10 max-w-2xl font-Ovo">I am a web developer currently working with Contacts International, with about one year of experience. Committed to delivering high-quality web solutions, I continuously enhance my skills to stay ahead in the field of web development.</p>
+                <p class="mb-10 max-w-2xl font-Ovo">I am a web developer currently working with Contacts International,
+                    with about one year of experience. Committed to delivering high-quality web solutions, I
+                    continuously enhance my skills to stay ahead in the field of web development.</p>
 
                 <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
                     <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:lightHover hover:-translate-y-1
@@ -421,42 +424,42 @@ if (isset($_GET['download'])) {
 
     <script src="script.js"></script>
     <script>
-  const text = "Hi! I'm Bilash Kumar Mondol ";
-  const target = document.getElementById('animated-text');
-  const handIconHtml = '<img src="images/hand-icon.png" class="w-6 ml-2" alt="hand">';
+        const text = "Hi! I'm Bilash Kumar Mondol ";
+        const target = document.getElementById('animated-text');
+        const handIconHtml = '<img src="images/hand-icon.png" class="w-6 ml-2" alt="hand">';
 
-  let index = 0;
-  let isDeleting = false;
+        let index = 0;
+        let isDeleting = false;
 
-  function typeLoop() {
-    if (!isDeleting) {
-      // লিখছো
-      target.innerHTML = text.substring(0, index) + handIconHtml;
-      index++;
+        function typeLoop() {
+            if (!isDeleting) {
+                // লিখছো
+                target.innerHTML = text.substring(0, index) + handIconHtml;
+                index++;
 
-      if (index > text.length) {
-        // পুরো লেখা হয়ে গেছে, একটু থামো, তারপর ডিলিট শুরু করো
-        isDeleting = true;
-        setTimeout(typeLoop, 1500); // 1.5 সেকেন্ড থামো পুরো লেখা দেখানোর জন্য
-        return;
-      }
-      setTimeout(typeLoop, 150);
-    } else {
-      // ডিলিট করছো
-      index--;
-      target.innerHTML = text.substring(0, index) + handIconHtml;
+                if (index > text.length) {
+                    // পুরো লেখা হয়ে গেছে, একটু থামো, তারপর ডিলিট শুরু করো
+                    isDeleting = true;
+                    setTimeout(typeLoop, 1500); // 1.5 সেকেন্ড থামো পুরো লেখা দেখানোর জন্য
+                    return;
+                }
+                setTimeout(typeLoop, 150);
+            } else {
+                // ডিলিট করছো
+                index--;
+                target.innerHTML = text.substring(0, index) + handIconHtml;
 
-      if (index === 0) {
-        // ডিলিট শেষ, আবার টাইপ শুরু করো
-        isDeleting = false;
-        setTimeout(typeLoop, 500);
-        return;
-      }
-      setTimeout(typeLoop, 100);
-    }
-  }
+                if (index === 0) {
+                    // ডিলিট শেষ, আবার টাইপ শুরু করো
+                    isDeleting = false;
+                    setTimeout(typeLoop, 500);
+                    return;
+                }
+                setTimeout(typeLoop, 100);
+            }
+        }
 
-  typeLoop();
+        typeLoop();
     </script>
 
 </body>
