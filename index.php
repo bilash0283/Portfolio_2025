@@ -300,9 +300,9 @@ if (isset($_GET['download'])) {
 
                     <div>
                         <h2 class="font-semibold">Frontend Projects</h2>
-                        <p class="text-sm text-gray-700">web design</p>
+                        <p class="text-sm text-gray-700">Foodies</p>
                     </div>
-                    <a href="https://example.com" target="_blank" 
+                    <a href="https://foodiesappbd.netlify.app" target="_blank" 
                     class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_0_#000] group:hover:bg-lime-300 transition">
                         <img src="images/send-icon.png" class="w-5" alt="">
                     </a>
@@ -318,13 +318,13 @@ if (isset($_GET['download'])) {
        group-hover:bottom-7">
 
                     <div>
-                        <h2 class="font-semibold">Geo based Projects</h2>
-                        <p class="text-sm text-gray-700">Wordpress Design</p>
+                        <h2 class="font-semibold">Web Design Project</h2>
+                        <p class="text-sm text-gray-700">GSC</p>
                     </div>
-                    <div class="border rounded-full border-black w-9 aspect-square flex items-center
-       justify-center shadow-[2px_0_#000] group:hover:bg-lime-300 transition">
+                    <a href="www.gsc.co.com" target="_blank"
+                    class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_0_#000] group:hover:bg-lime-300 transition">
                         <img src="images/send-icon.png" class="w-5" alt="">
-                    </div>
+                    </a>
 
                 </div>
             </div>
@@ -337,13 +337,13 @@ if (isset($_GET['download'])) {
       group-hover:bottom-7">
 
                     <div>
-                        <h2 class="font-semibold">Photography site</h2>
-                        <p class="text-sm text-gray-700">web design</p>
+                        <h2 class="font-semibold">Web design & Development</h2>
+                        <p class="text-sm text-gray-700">GSC Portal</p>
                     </div>
-                    <div class="border rounded-full border-black w-9 aspect-square flex items-center
-      justify-center shadow-[2px_0_#000] group:hover:bg-lime-300 transition">
+                    <a href="https://ci-gsc.com" target="_blank"
+                    class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_0_#000] group:hover:bg-lime-300 transition">
                         <img src="images/send-icon.png" class="w-5" alt="">
-                    </div>
+                    </a>
 
                 </div>
             </div>
