@@ -299,10 +299,10 @@ if (isset($_GET['download'])) {
                 <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
 
                     <div>
-                        <h2 class="font-semibold">Frontend Projects</h2>
-                        <p class="text-sm text-gray-700">Foodies</p>
+                        <h2 class="font-semibold">Web Design Project</h2>
+                        <p class="text-sm text-gray-700">GSC</p>
                     </div>
-                    <a href="https://foodiesappbd.netlify.app" target="_blank" 
+                    <a href="https://www.gsc.co.com" target="_blank"
                     class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_0_#000] group:hover:bg-lime-300 transition">
                         <img src="images/send-icon.png" class="w-5" alt="">
                     </a>
@@ -318,10 +318,10 @@ if (isset($_GET['download'])) {
        group-hover:bottom-7">
 
                     <div>
-                        <h2 class="font-semibold">Web Design Project</h2>
-                        <p class="text-sm text-gray-700">GSC</p>
+                        <h2 class="font-semibold">Frontend Projects</h2>
+                        <p class="text-sm text-gray-700">Foodies</p>
                     </div>
-                    <a href="www.gsc.co.com" target="_blank"
+                    <a href="https://foodiesappbd.netlify.app" target="_blank" 
                     class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_0_#000] group:hover:bg-lime-300 transition">
                         <img src="images/send-icon.png" class="w-5" alt="">
                     </a>
@@ -356,13 +356,13 @@ if (isset($_GET['download'])) {
      group-hover:bottom-7">
 
                     <div>
-                        <h2 class="font-semibold">UI/UX designing</h2>
-                        <p class="text-sm text-gray-700">UI/UX design</p>
+                        <h2 class="font-semibold">Contacts International</h2>
+                        <p class="text-sm text-gray-700">WordPress</p>
                     </div>
-                    <div class="border rounded-full border-black w-9 aspect-square flex items-center
-     justify-center shadow-[2px_0_#000] group:hover:bg-lime-300 transition">
+                    <a href="https://www.contactsint.com" target="_blank"
+                    class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_0_#000] group:hover:bg-lime-300 transition">
                         <img src="images/send-icon.png" class="w-5" alt="">
-                    </div>
+                    </a>
 
                 </div>
             </div>
