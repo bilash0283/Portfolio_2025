@@ -29,7 +29,6 @@ if (isset($_GET['download'])) {
 ?>
 
 <html lang="en" class="scroll-smooth">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,20 +44,20 @@ if (isset($_GET['download'])) {
         <meta name="author" content="bilash0283">
 
         <!-- Open Graph for Facebook/LinkedIn -->
-        <meta property="og:title" content="Bilash | Web Developer Portfolio">
+        <meta property="og:title" content="Bilash | Web Developer Portfolio | bilash0283">
         <meta property="og:description" content="Professional web development services by Bilash0283. Modern, fast, and SEO-friendly websites.">
-        <meta property="og:image" content="https://yourwebsite.com/images/profile-img.png">
-        <meta property="og:url" content="https://yourwebsite.com">
+        <meta property="og:image" content="https://bilash.ci-gsc.com/images/user-image.png">
+        <meta property="og:url" content="https://bilash.ci-gsc.com">
         <meta property="og:type" content="website">
 
         <!-- Twitter Card -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Bilash | Web Developer Portfolio">
-        <meta name="twitter:description" content="Creative & SEO-friendly web developer. Visit Bilash0283's portfolio now.">
+        <meta name="twitter:description" content="Creative & SEO-friendly web developer. Visit Bilash0283's portfolio now.bilash0283">
         <meta name="twitter:image" content="https://yourwebsite.com/images/profile-img.png">
 
         <!-- Favicon -->
-        <link rel="icon" type="image/png" sizes="32x32" href="images/profile-img.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://bilash.ci-gsc.com/images/user-image.png">
 
         <!-- Tailwind CSS -->
         <script src="https://cdn.tailwindcss.com"></script>
@@ -67,7 +66,6 @@ if (isset($_GET['download'])) {
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     </head>
-
 
     <body class="overflow-x-hidden font-Outfit leading-8 dark:bg-darkTheme dark:text-white">
 
@@ -567,7 +565,6 @@ if (isset($_GET['download'])) {
             typeLoop();
         </script>
     </body>
-
 </html>
 
 
