@@ -34,11 +34,40 @@ if (isset($_GET['download'])) {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BILASH KUMAR MONDOL</title>
+        
+        <!-- Meta Description -->
+        <meta name="description" content="Bilash - Professional Web Developer & Designer. Visit Bilash0283's portfolio to explore creative, responsive, and SEO-friendly web development projects.">
+        
+        <!-- Meta Keywords -->
+        <meta name="keywords" content="Bilash, Bilash0283, bilash0283, Bilash web developer, web design, SEO expert, full stack developer, portfolio, website developer, bilashmohakash, Bilash Mohakash, Bilash Web Developer, Bilash Softwar Engineer, Bilash Kumar Mondol, GSC Web Developer , Bilash0283 web developer,">
+        
+        <!-- Author -->
+        <meta name="author" content="bilash0283">
+
+        <!-- Open Graph for Facebook/LinkedIn -->
+        <meta property="og:title" content="Bilash | Web Developer Portfolio">
+        <meta property="og:description" content="Professional web development services by Bilash0283. Modern, fast, and SEO-friendly websites.">
+        <meta property="og:image" content="https://yourwebsite.com/images/profile-img.png">
+        <meta property="og:url" content="https://yourwebsite.com">
+        <meta property="og:type" content="website">
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Bilash | Web Developer Portfolio">
+        <meta name="twitter:description" content="Creative & SEO-friendly web developer. Visit Bilash0283's portfolio now.">
+        <meta name="twitter:image" content="https://yourwebsite.com/images/profile-img.png">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="images/profile-img.png">
+
+        <!-- Tailwind CSS -->
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="tailwind.config.js"></script>
-        <link rel="icon" type="image/png" sizes="32x32" href="images/profile-img.png">
+        
+        <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     </head>
+
 
     <body class="overflow-x-hidden font-Outfit leading-8 dark:bg-darkTheme dark:text-white">
 
