@@ -172,7 +172,7 @@ if (isset($_GET['download'])) {
                         continuously enhance my skills to stay ahead in the field of web development.</p>
 
                     <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
-                        <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:lightHover hover:-translate-y-1
+                        <li class="border-[0.5px] border-grey-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1
                         duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white
                         dark:hover:bg-darkHover/50  ">
                             <img src="images/code-icon.png" class="w-7 mt-3 dark:hidden" alt="">
@@ -192,7 +192,7 @@ if (isset($_GET['download'])) {
                             <p class="text-gray-600 text-sm dark:text-white/80">Diploma in Engineering (CSE)</p>
                         </li>
 
-                        <li class="border-[0.5px] border-grey-400 rounded-xl p-6 cursor-pointer hover:bg-[lightHover hover:-translate-y-1
+                        <li class="border-[0.5px] border-grey-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1
                     duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white
                     dark:hover:bg-darkHover/50 ">
                             <img src="images/project-icon.png" class="w-7 mt-3 dark:hidden" alt="">
