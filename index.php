@@ -102,7 +102,7 @@ if (isset($_GET['download'])) {
 
                 <button class="block md:hidden ml-3" onclick="openMenu()">
                     <img src="images/menu-black.png" class="w-6 dark:hidden ">
-                    <img src="images/menu-black.png" class="w-6 hidden dark:block ">
+                    <img src="images/menu-white.png" class="w-6 hidden dark:block ">
                 </button>
 
             </div>
