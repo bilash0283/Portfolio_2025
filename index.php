@@ -449,20 +449,20 @@ if (isset($_GET['download'])) {
                         $to = $email;
                         $subject = "Thank You for Reaching Out";
                         $message = "
-                Dear $name,
+                        Dear $name,
 
-                My name is Bilash Kumar Mondol.
-                Thank you for contacting me via email.
-                Welcome to my portfolio!
+                        My name is Bilash Kumar Mondol.
+                        Thank you for contacting me via email.
+                        Welcome to my portfolio!
 
-                If you would like to know more, please feel free to reach out to me via WhatsApp or email:
-                WhatsApp: +880 1705 372439
-                Email: bilash0283@gmail.com
+                        If you would like to know more, please feel free to reach out to me via WhatsApp or email:
+                        WhatsApp: +880 1705 372439
+                        Email: bilash0283@gmail.com
 
-                Best regards,
-                Bilash Kumar Mondol
-                Web Developer
-                Contacts International";
+                        Best regards,
+                        Bilash Kumar Mondol
+                        Web Developer
+                        Contacts International";
 
                         $headers = "From: bilash.kumar@ci-gsc.com\r\n";
                         $headers .= "Reply-To: bilash.kumar@ci-gsc.com\r\n";
