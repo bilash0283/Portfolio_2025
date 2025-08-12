@@ -57,7 +57,7 @@ if (isset($_GET['download'])) {
         <meta name="twitter:image" content="https://yourwebsite.com/images/profile-img.png">
 
         <!-- Favicon -->
-        <link rel="icon" type="image/png" sizes="32x32" href="https://bilash.ci-gsc.com/images/user-image.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/profile-img.png">
 
         <!-- Tailwind CSS -->
         <script src="https://cdn.tailwindcss.com"></script>
