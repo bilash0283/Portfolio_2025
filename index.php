@@ -46,7 +46,7 @@ if (isset($_GET['download'])) {
         <!-- Open Graph for Facebook/LinkedIn -->
         <meta property="og:title" content="Bilash | Web Developer Portfolio | bilash0283">
         <meta property="og:description" content="Professional web development services by Bilash0283. Modern, fast, and SEO-friendly websites.">
-        <meta property="og:image" content="https://bilash.ci-gsc.com/images/user-image.png">
+        <meta property="og:image" content="https://bilash.ci-gsc.com/images/user-image.jpg">
         <meta property="og:url" content="https://bilash.ci-gsc.com">
         <meta property="og:type" content="website">
 
@@ -155,7 +155,7 @@ if (isset($_GET['download'])) {
 
             <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
                 <div class="max-w-max mx-auto relative">
-                    <img src="images/user-image.png" class="w-64 sm:w-80 roundede-3xl max-w-none " alt="">
+                    <img src="images/user-image.jpg" class="w-64 sm:w-80 roundede-3xl max-w-none " alt="">
 
                     <div class="w-1/2 aspect-square absolute right-0 bottom-0
                         rounded-full translate-x-1/4 translate-y-1/3
