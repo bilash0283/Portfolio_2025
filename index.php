@@ -329,7 +329,7 @@ if (isset($_GET['download'])) {
 
                         <div>
                             <h2 class="font-semibold">GSC EduTech</h2>
-                            <p class="text-sm text-gray-700">Foodies</p>
+                            <p class="text-sm text-gray-700">Agent Portal</p>
                         </div>
                         <a href="https://ci-gsc.com" target="_blank" 
                         class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_0_#000] group:hover:bg-lime-300 transition">
@@ -367,7 +367,7 @@ if (isset($_GET['download'])) {
 
                         <div>
                             <h2 class="font-semibold">Contacts International</h2>
-                            <p class="text-sm text-gray-700">WordPress</p>
+                            <p class="text-sm text-gray-700">Contacts International</p>
                         </div>
                         <a href="https://www.contactsint.com" target="_blank"
                         class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_0_#000] group:hover:bg-lime-300 transition">
