@@ -347,10 +347,10 @@ if (isset($_GET['download'])) {
         group-hover:bottom-7">
 
                         <div>
-                            <h2 class="font-semibold">Web design & Development</h2>
-                            <p class="text-sm text-gray-700">GSC Portal</p>
+                            <h2 class="font-semibold">Website with Portal</h2>
+                            <p class="text-sm text-gray-700">Admission Portal</p>
                         </div>
-                        <a href="https://ci-gsc.com" target="_blank"
+                        <a href="https://admission-portal.com" target="_blank"
                         class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_0_#000] group:hover:bg-lime-300 transition">
                             <img src="images/send-icon.png" class="w-5" alt="">
                         </a>
